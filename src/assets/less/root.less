@@ -150,6 +150,28 @@
         width: 92%;
     }
 
+
+    .cs-li {
+        font-size: var(--bodyFontSize);
+        list-style: none;
+        line-height: 1.5em;
+        width: 100%;
+        color: var(--bodyTextColor);
+        display: flex;
+        justify-content: flex-start;
+        /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+        align-items: flex-start;
+        gap: (8/16rem);
+    }
+
+    .cs-icon {
+        width: (24/16rem);
+        height: auto;
+        /* adds extra space between the icon and top of parent so it's more centered */
+        margin-top: 1px;
+        display: block;
+    }
+    
     .cs-title {
         font-family: 'Charmonman';
     }

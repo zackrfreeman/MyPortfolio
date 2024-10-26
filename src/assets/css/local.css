@@ -72,8 +72,12 @@
   #services-1330 .cs-item:hover .cs-item-text {
     color: #fff;
   }
+  #services-1330 .cs-item:hover .cs-li {
+    color: #fff;
+  }
   #services-1330 .cs-item:hover .cs-icon {
     transform: rotateY(360deg) translateY(-0.25rem);
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
   }
   #services-1330 .cs-picture {
     margin-bottom: 1.25rem;
@@ -198,8 +202,12 @@
   #services-1201 .cs-item:hover .cs-item-text {
     color: #fff;
   }
+  #services-1201 .cs-item:hover .cs-li {
+    color: #fff;
+  }
   #services-1201 .cs-item:hover .cs-icon {
     transform: rotateY(360deg) translateY(-0.25rem);
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
   }
   #services-1201 .cs-picture {
     margin-bottom: 1.25rem;
@@ -565,7 +573,7 @@
   }
   #services-366 .cs-item:hover .cs-icon {
     /* makes it white on hover */
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
   }
   #services-366 .cs-item:hover .cs-h3 {
     color: #fff;
