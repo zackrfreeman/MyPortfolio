@@ -49,7 +49,7 @@
         .cs-content {
             text-align: left;
             width: 100%;
-            
+            max-width: (400/16rem);
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -57,15 +57,12 @@
             align-items: left;
         }
 
-        h2 {
-            max-width: (300/16rem);
-        }
+
 
     
         .cs-title {
             /* 39px - 61px */
             font-size: clamp(4.4375rem, 6.4vw, 5.8125rem);
-            max-width: (600/16rem);
             font-weight: 700;
             line-height: 1.2em;
             text-align: inherit;
@@ -81,7 +78,6 @@
         .cs-text {
             /* 16px - 20px */
             font-size: clamp(1rem, 1.95vw, 1.25rem);
-            max-width: (300/16rem);
             line-height: 1.5em;
             text-align: inherit;
             width: 100%;

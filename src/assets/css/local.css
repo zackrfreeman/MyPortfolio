@@ -1,140 +1,11 @@
 /*-- -------------------------- -->
-<---          Skills          -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #services-1748 {
-    padding: var(--sectionPadding);
-    position: relative;
-  }
-  #services-1748 .cs-container {
-    width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 36.5rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #services-1748 .cs-content {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #services-1748 .cs-title {
-    max-width: 20ch;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #services-1748 .cs-text {
-    color: var(--bodyTextColorWhite);
-  }
-  #services-1748 .cs-card-group {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-  }
-  #services-1748 .cs-item {
-    text-align: center;
-    list-style: none;
-    width: 100%;
-    /* 260px - 320px */
-    height: clamp(16.25rem, 33vw, 20rem);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
-    grid-column: span 12;
-    position: relative;
-    z-index: 1;
-  }
-  #services-1748 .cs-item:hover .cs-background:before {
-    background-color: var(--primary);
-    opacity: 0.84;
-  }
-  #services-1748 .cs-item:hover .cs-background img {
-    transform: scale(1.2);
-  }
-  #services-1748 .cs-link {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    /* padding goes on the link, not the cs-item as is normal. We do this because we want the whole card to be hoverable. So we add the padding to the link tag to create the space inside the card. By adding the space inside the cs-link tag we can make the whole card hoverable since the padding is now contributing to the height and width of the link */
-    padding: 1.5rem;
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #services-1748 .cs-h3 {
-    /* 25px - 39px */
-    font-size: clamp(1.5625rem, 3vw, 2.4375rem);
-    line-height: 1.2em;
-    font-weight: bold;
-    text-align: inherit;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #services-1748 .cs-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #services-1748 .cs-background:before {
-    /* background color overlay */
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    opacity: 0.4;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: background-color 0.3s, opacity 0.3s;
-  }
-  #services-1748 .cs-background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
-    transition: transform 0.6s;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #services-1748 .cs-container {
-    max-width: 80rem;
-  }
-  #services-1748 .cs-item {
-    grid-column: span 4;
-  }
-}
-/*-- -------------------------- -->
 <---          Experience          -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #services-1330 {
     padding: var(--sectionPadding);
+    padding-top: 12.5rem;
   }
   #services-1330 .cs-container {
     width: 100%;
@@ -156,6 +27,7 @@
     text-align: center;
   }
   #services-1330 .cs-title {
+    margin-top: 2rem;
     color: var(--bodyTextColor);
   }
   #services-1330 .cs-text {
@@ -186,20 +58,19 @@
     /* 20px - 48px */
     padding: clamp(1.25rem, 3.2vw, 3rem);
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     grid-column: span 12;
     flex-direction: column;
     transition: border-color 0.3s;
   }
   #services-1330 .cs-item:hover {
-    border-color: var(--primary);
+    background: #000;
   }
   #services-1330 .cs-item:hover .cs-h3 {
     color: var(--primary);
   }
   #services-1330 .cs-item:hover .cs-item-text {
-    color: var(--primary);
+    color: #fff;
   }
   #services-1330 .cs-item:hover .cs-icon {
     transform: rotateY(360deg) translateY(-0.25rem);
@@ -246,14 +117,14 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #services-1330 .cs-container {
-    flex-direction: row;
+    flex-direction: column;
   }
   #services-1330 .cs-content {
-    max-width: 21.875rem;
+    max-width: 75rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
   }
   #services-1330 .cs-title {
     max-width: 46.875rem;
@@ -263,7 +134,142 @@
   }
 }
 /*-- -------------------------- -->
-  <---          Services          -->
+<---          Skills          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-1201 {
+    padding: var(--sectionPadding);
+  }
+  #services-1201 .cs-container {
+    max-width: 80rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-1201 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #services-1201 .cs-title {
+    margin-top: 2rem;
+    color: var(--bodyTextColor);
+  }
+  #services-1201 .cs-flex-group {
+    display: flex;
+    flex-direction: column;
+  }
+  #services-1201 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+  }
+  #services-1201 .cs-item {
+    /* .cs-h3 and .cs-item-text both use text-align: inherit, so change the below to affect the whole item */
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    /* 20px - 48px */
+    padding: clamp(1.25rem, 3.2vw, 3rem);
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s;
+  }
+  #services-1201 .cs-item:hover {
+    background: #000;
+  }
+  #services-1201 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #services-1201 .cs-item:hover .cs-item-text {
+    color: #fff;
+  }
+  #services-1201 .cs-item:hover .cs-icon {
+    transform: rotateY(360deg) translateY(-0.25rem);
+  }
+  #services-1201 .cs-picture {
+    margin-bottom: 1.25rem;
+    border-radius: 50%;
+    position: relative;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #services-1201 .cs-icon {
+    width: 1.875rem;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+  }
+  #services-1201 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    margin-bottom: 0.75rem;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #services-1201 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
+    transition: color 0.3s;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-1201 .cs-content {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+  }
+  #services-1201 .cs-card-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #services-1201 .cs-item {
+    margin: 0;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #services-1201 .cs-content,
+  #services-1201 .cs-card-group {
+    max-width: 80rem;
+  }
+  #services-1201 .cs-title {
+    max-width: 46.875rem;
+  }
+  #services-1201 .cs-card-group {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #services-1201 .cs-item {
+    max-width: none;
+  }
+  #services-1201 .cs-item:first-of-type,
+  #services-1201 .cs-item:last-of-type {
+    grid-column: span 2;
+  }
+}
+/*-- -------------------------- -->
+  <---          Projects          -->
   <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -298,11 +304,10 @@
   }
   #services-1728 .cs-title {
     max-width: 13ch;
-    color: var(--bodyTextColorWhite);
+    margin-top: 2rem;
   }
   #services-1728 .cs-text {
     max-width: 39.5rem;
-    color: var(--bodyTextColorWhite);
     opacity: 0.8;
   }
   #services-1728 .cs-card-group {
@@ -324,6 +329,7 @@
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     padding: 0;
+    background-color: #000;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -396,7 +402,7 @@
     width: 100%;
     height: 80%;
     opacity: 1;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.94%, #000000 90.78%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35.94%, #000 90.78%);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -434,9 +440,6 @@
   #services-1728 .cs-text {
     width: 60%;
   }
-  #services-1728 .cs-title {
-    margin: 0;
-  }
 }
 /* Desktop - 1200px */
 @media only screen and (min-width: 75rem) {
@@ -452,7 +455,7 @@
   }
 }
 /*-- -------------------------- -->
-  <---          Services          -->
+  <---          Contact          -->
   <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -548,13 +551,11 @@
     /* 20px - 40px top & bottom */
     /* 16px - 32px left & right */
     padding: clamp(1.25rem, 3.5vw, 2.5rem) clamp(1rem, 2.5vw, 2rem);
-    border-radius: 1rem;
-    border: 1px solid #e8e8e8;
     box-sizing: border-box;
     transition: background-color 0.3s;
   }
   #services-366 .cs-item:hover {
-    background-color: var(--primary);
+    background-color: #000;
   }
   #services-366 .cs-item:hover .cs-icon-wrapper:before,
   #services-366 .cs-item:hover .cs-bubble:before,
@@ -683,7 +684,7 @@
     line-height: 1.2em;
     margin: 0;
     margin-bottom: 0.75rem;
-    color: var(--bodyTextColorWhite);
+    color: var(--headerColor);
     transition: color 0.3s;
   }
   #services-366 .cs-item-text {
@@ -692,7 +693,7 @@
     text-align: center;
     line-height: 1.5em;
     margin: 0;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     transition: color 0.3s;
   }
 }

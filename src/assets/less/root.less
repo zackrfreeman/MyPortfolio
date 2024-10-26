@@ -1022,7 +1022,6 @@
         padding: var(--sectionPadding);
         padding-top: 0;
         padding-bottom: (40/16rem);
-        background-color: #F6EDDF;
 
         .cs-container {
             width: 100%;
@@ -1040,10 +1039,7 @@
             /* changes to -224px at desktop */
             margin-bottom: (-254/16rem);
             /* 60px - 100px top & bottom */
-            padding: clamp(3.75rem, 8vw, 6.25rem) (24/16rem);
-            background-color: var(--primary);
-            border: 8px solid var(--primaryLight);
-            border-radius: (80/16rem);
+            padding: clamp(3.75rem, 8vw, 6.25rem) (24/16rem);  
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1051,21 +1047,38 @@
             position: relative;
             /* 314px */
             transform: translateY(-19.625rem);
+
+            &:hover {
+                background: #000;
+
+                .cs-h3 {
+                    color: var(--primary);
+                }
+
+                .cs-item-text, .cs-title {
+                    color: #fff;
+                }
+
+                .cs-icon {
+                    transform: rotateY(360deg) translateY(-0.25rem);
+                }
+            }
         }
 
         .cs-topper {
             margin: 0 0 (4/16rem) 0;
-            color: var(--bodyTextColorWhite);
+            color: var(--primary);
         }
 
         .cs-title {
-            color: var(--bodyTextColorWhite);
+            color: var(--bodyTextColor);
             max-width: 25ch;
+            margin-top: (32/16rem);
         }
 
         .cs-text {
             margin: 0 0 (32/16rem) 0;
-            color: var(--bodyTextColorWhite);
+            color: var(--bodyTextColor);
         }
 
         .cs-form {
@@ -1087,35 +1100,10 @@
             box-sizing: border-box;
             padding: 0;
             padding-left: (20/16rem);
-            border: none;
-            border-radius: (60/16rem);
             display: block;
         }
 
-        .cs-button-solid {
-            font-size: (16/16rem);
-            font-weight: 700;
-            /* 46px - 56px */
-            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-            text-align: center;
-            text-decoration: none;
-            margin: 0;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
-            padding: 0 (24/16rem);
-            background-color: var(--headerColor);
-            color: #fff;
-            border-radius: (60/16rem);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-
-            &:hover {
-                background-color: #ffffff;
-                color: var(--headerColor);
-            }
-        }
-
+      
         .cs-submit {
             width: 100%;
             color: var(--bodyTextColorWhite);
@@ -1148,16 +1136,7 @@
             gap: clamp(2rem, 4vw, 3rem);
         }
 
-        .cs-logo {
-            width: 100%;
-            max-width: (317/16rem);
-            height: auto;
 
-            img {
-                width: 100%;
-                height: auto;
-            }
-        }
 
         .cs-social {
             margin: 0;
@@ -1352,7 +1331,7 @@
             /* 60px - 100px top & bottom */
             /* 100px - 200px left & right */
             padding: clamp(3.75rem, 8vw, 6.25rem) clamp(6.25rem, 13vw, 12.5rem);
-            border-radius: (400/16rem);
+           
         }
 
         .cs-form {

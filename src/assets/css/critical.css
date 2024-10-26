@@ -44,19 +44,16 @@
   #hero-1427 .cs-content {
     text-align: left;
     width: 100%;
+    max-width: 25rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: left;
   }
-  #hero-1427 h2 {
-    max-width: 18.75rem;
-  }
   #hero-1427 .cs-title {
     /* 39px - 61px */
     font-size: clamp(4.4375rem, 6.4vw, 5.8125rem);
-    max-width: 37.5rem;
     font-weight: 700;
     line-height: 1.2em;
     text-align: inherit;
@@ -70,7 +67,6 @@
   #hero-1427 .cs-text {
     /* 16px - 20px */
     font-size: clamp(1rem, 1.95vw, 1.25rem);
-    max-width: 18.75rem;
     line-height: 1.5em;
     text-align: inherit;
     width: 100%;
